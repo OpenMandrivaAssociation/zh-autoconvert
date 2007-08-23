@@ -62,7 +62,7 @@ perl -p -i -e 's|/usr/lib|%{_libdir}|g' Makefile
 rm -rf doc/CVS
 
 %build
-%make
+make
 # stupid, isn't it?
 #make CFLAG='%optflags -Wall -Iinclude' CFLAGS='%optflags -Wall -I../include'
 
