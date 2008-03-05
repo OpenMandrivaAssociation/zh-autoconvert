@@ -1,5 +1,4 @@
 %define version 0.3.16
-%define release %mkrel 2
 
 %define pkgname autoconvert
 %define lib_major 0
@@ -9,7 +8,7 @@
 Summary:	Chinese HZ/GB/BIG5 encodings auto-converter
 Name:		zh-autoconvert
 Version:	%{version}
-Release:	%{release}
+Release:	%mkrel 3
 License:	GPL
 Group:		System/Internationalization
 URL:		http://banyan.dlut.edu.cn/~ygh/
