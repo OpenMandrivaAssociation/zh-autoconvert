@@ -1,0 +1,27 @@
+--- autoconvert-0.3.14/Makefile.bak	2001-04-28 09:45:46.000000000 +0800
++++ autoconvert-0.3.14/Makefile	2005-01-02 06:29:54.548322872 +0800
+@@ -5,7 +5,7 @@
+ 
+ .PHONY: all hzlib clean install-home install
+ 
+-all: autob5 autogb hzlib  xchat-plugins
++all: autob5 autogb hzlib
+ 
+ autob5: autogb
+ 	rm -f autob5;ln -s autogb autob5
+@@ -30,12 +30,13 @@
+ 	ln -s $(HOME)/bin/autogb $(HOME)/bin/autob5
+ 	chmod 755 $(HOME)/bin/autogb 
+ install:
++	if test ! -d $(DESTDIR)/usr/bin; then mkdir -p $(DESTDIR)/usr/bin; fi
++	if test ! -d $(DESTDIR)/usr/lib; then mkdir -p $(DESTDIR)/usr/lib; fi
++	if test ! -d $(DESTDIR)/usr/include; then mkdir -p $(DESTDIR)/usr/include; fi
+ 	install -m 755 autogb $(DESTDIR)/usr/bin
+ 	install -m 755 lib/libhz.so.0.0 $(DESTDIR)/usr/lib
+ 	cd $(DESTDIR)/usr/lib;ln -s  libhz.so.0.0 libhz.so.0
+ 	cd $(DESTDIR)/usr/lib;ln -s  libhz.so.0 libhz.so
+ 	install -m 755 lib/libhz.a $(DESTDIR)/usr/lib
+-	install -m 755 contrib/xchat-plugins/xchat-autogb.so $(DESTDIR)/usr/share/zh-autoconvert
+-	install -m 755 contrib/xchat-plugins/xchat-autob5.so $(DESTDIR)/usr/share/zh-autoconvert
+ 	install -m 644 include/*.h  $(DESTDIR)/usr/include
+ 	ln -s autogb $(DESTDIR)/usr/bin/autob5
