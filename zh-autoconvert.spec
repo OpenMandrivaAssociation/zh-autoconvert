@@ -93,3 +93,66 @@ rm -rf %{buildroot}
 %{_includedir}/hz.h
 %{_libdir}/libhz.a
 %{_libdir}/libhz.so
+
+
+%changelog
+* Sat May 07 2011 Oden Eriksson <oeriksson@mandriva.com> 0.3.16-7mdv2011.0
++ Revision: 671956
+- mass rebuild
+
+* Sat Dec 04 2010 Oden Eriksson <oeriksson@mandriva.com> 0.3.16-6mdv2011.0
++ Revision: 608284
+- rebuild
+
+* Wed Mar 17 2010 Oden Eriksson <oeriksson@mandriva.com> 0.3.16-5mdv2010.1
++ Revision: 524484
+- rebuilt for 2010.1
+
+* Sat Mar 07 2009 Antoine Ginies <aginies@mandriva.com> 0.3.16-4mdv2009.1
++ Revision: 350727
+- rebuild
+
+* Mon Jun 09 2008 Pixel <pixel@mandriva.com> 0.3.16-3mdv2009.0
++ Revision: 217197
+- do not call ldconfig in %%post/%%postun, it is now handled by filetriggers
+
+* Wed Mar 05 2008 Oden Eriksson <oeriksson@mandriva.com> 0.3.16-3mdv2008.1
++ Revision: 179416
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Thu Aug 23 2007 Funda Wang <fwang@mandriva.org> 0.3.16-2mdv2008.0
++ Revision: 70233
+- use own optflags
+- New devel package policy
+
+
+* Fri Mar 23 2007 Funda Wang <fundawang@mandriva.org> 0.3.16-1mdv2007.1
++ Revision: 148617
+- Uploading tarball.
+- new release 0.3.16
+- Created package structure for zh-autoconvert.
+
+* Tue May 30 2006 Pascal Terjan <pterjan@mandriva.org> 0.3.14-4mdv2007.0
+- fix lib path on x86_64
+
+* Sat Dec 31 2005 Mandriva Linux Team <http://www.mandrivaexpert.com/> 0.3.14-3mdk
+- Rebuild
+
+* Thu Jul 28 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.3.14-2mdk
+- Add Patch2  Fix Build with gcc4
+- mkrel
+- remove shed.big5, shed.gb, shed.uni, shed.utf7, shed.utf8
+         - Close ticket 15811
+
+* Sun Jan 02 2005 Abel Cheung <deaddog@mandrake.org> 0.3.14-1mdk
+- Managed to dig out a new version
+- Remove P0 (use make variable instead), and P1 (upstream)
+- Simplify install procedure
+- New patch0: don't build obsolete xchat plugin
+
