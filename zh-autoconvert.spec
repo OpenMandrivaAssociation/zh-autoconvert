@@ -8,7 +8,7 @@
 Summary:	Chinese HZ/GB/BIG5 encodings auto-converter
 Name:		zh-autoconvert
 Version:	%{version}
-Release:	9
+Release:	10
 License:	GPL
 Group:		System/Internationalization
 URL:		http://banyan.dlut.edu.cn/~ygh/
