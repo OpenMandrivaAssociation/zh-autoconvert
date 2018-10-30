@@ -8,7 +8,7 @@
 Summary:	Chinese HZ/GB/BIG5 encodings auto-converter
 Name:		zh-autoconvert
 Version:	%{version}
-Release:	15
+Release:	16
 License:	GPL
 Group:		System/Internationalization
 URL:		http://banyan.dlut.edu.cn/~ygh/
@@ -144,7 +144,7 @@ rm -rf %{buildroot}
 * Sat Dec 31 2005 Mandriva Linux Team <http://www.mandrivaexpert.com/> 0.3.14-3mdk
 - Rebuild
 
-* Thu Jul 28 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.3.14-2mdk
+* Thu Jul 28 2005 Nicolas LÃ©cureuil <neoclust@mandriva.org> 0.3.14-2mdk
 - Add Patch2  Fix Build with gcc4
 - mkrel
 - remove shed.big5, shed.gb, shed.uni, shed.utf7, shed.utf8
