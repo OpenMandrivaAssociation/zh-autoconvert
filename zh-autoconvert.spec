@@ -11,7 +11,7 @@ Version:	%{version}
 Release:	18
 License:	GPL
 Group:		System/Internationalization
-URL:		http://banyan.dlut.edu.cn/~ygh/
+URL:		https://banyan.dlut.edu.cn/~ygh/
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source0:	ftp://banyan.dlut.edu.cn/pub/PEOPLE/saka/%{pkgname}-%{version}.tar.gz
 Patch0:		autoconvert-0.3.14-noxchat.patch
