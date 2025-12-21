@@ -20,6 +20,7 @@ Provides:	%{pkgname} = %{version}-%{release}
 Requires:	%{libname} = %{version}-%{release}
 Requires:	locales-zh
 
+BuildRequires:	make
 %description
 AutoConvert is an intelligent Chinese Encoding converter. It uses built-in
 functions to judge the type of the input file's Chinese Encoding (such as
